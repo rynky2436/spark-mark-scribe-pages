@@ -33,7 +33,7 @@ const Industries = () => {
       description: "Custom office signs, nameplates, awards laser engraved on wood, metal, glass",
       image: professionalImage,
       gradient: "bg-gradient-laser",
-      link: "/contact"
+      link: "/industries/professional-office-signs"
     },
     {
       icon: Utensils,
@@ -48,42 +48,42 @@ const Industries = () => {
       title: "Real Estate",
       description: "Property signs, office displays, and marketing materials",
       gradient: "bg-gradient-laser",
-      link: "/contact"
+      link: "/industries/real-estate"
     },
     {
       icon: Tractor,
       title: "Agriculture Equipment Tags",
       description: "Farm equipment laser engraving, livestock tags, agricultural signage DC Metro MD VA",
       gradient: "bg-gradient-spark",
-      link: "/contact"
+      link: "/industries/agriculture"
     },
     {
       icon: ShoppingBag,
       title: "Retail Store Displays",
       description: "Store displays, product labels, promotional items laser cut on wood metal glass",
       gradient: "bg-gradient-laser",
-      link: "/contact"
+      link: "/industries/retail"
     },
     {
       icon: Factory,
       title: "Industrial Laser Marking",
       description: "Safety signs, equipment tags, compliance marking laser engraved in DC Metro Area",
       gradient: "bg-gradient-spark",
-      link: "/contact"
+      link: "/industries/industrial"
     },
     {
       icon: Laptop,
       title: "Technology Laser Engraving",
       description: "Product labels, corporate awards, tech signage laser cut in Washington DC Metro Area",
       gradient: "bg-gradient-laser",
-      link: "/contact"
+      link: "/industries/technology"
     },
     {
       icon: Hotel,
       title: "Hospitality Custom Signs",
       description: "Hotel room signs, guest amenities, promotional displays laser engraved DC Metro MD VA",
       gradient: "bg-gradient-spark",
-      link: "/contact"
+      link: "/industries/hospitality"
     }
   ];
 
