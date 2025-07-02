@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import productsImage from "@/assets/laser-products.jpg";
-import { Layers, Scissors, Sparkles, Package, ArrowRight } from "lucide-react";
+import { Layers, Scissors, Sparkles, Package, ArrowRight, Grape } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -156,6 +156,47 @@ const Services = () => {
               </Button>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Featured Partnership */}
+        <div className="mt-16 pt-16 border-t border-border">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold text-foreground mb-4">Our Vinery & Microbrewery</h3>
+            <p className="text-lg text-muted-foreground">
+              Visit our sister company for handcrafted wines and artisanal beers
+            </p>
+          </div>
+          
+          <div className="max-w-md mx-auto">
+            <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-2 border-primary/20">
+              <CardHeader className="text-center">
+                <div className="p-4 bg-gradient-to-br from-purple-600 to-amber-600 rounded-lg w-fit mx-auto mb-4">
+                  <Grape className="h-8 w-8 text-white" />
+                </div>
+                <CardTitle className="text-xl">Barrel & Vine Designs</CardTitle>
+                <CardDescription className="text-base">
+                  Discover our premium wines and craft beers, featuring custom laser-engraved bottles and taps
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center">
+                <Button 
+                  variant="spark" 
+                  size="lg" 
+                  className="w-full group-hover:scale-105 transition-transform"
+                  asChild
+                >
+                  <a 
+                    href="https://www.barrelvinedesigns.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Visit Our Vinery & Brewery
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
