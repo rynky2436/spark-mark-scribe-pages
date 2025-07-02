@@ -31,7 +31,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="hidden lg:flex items-center space-x-2 text-sm">
               <Phone className="h-4 w-4 text-primary" />
-              <span className="text-foreground font-medium">Call Now: (202) 555-MARK</span>
+              <span className="text-foreground font-medium">Call Now: (240) 324-7110</span>
             </div>
             <Button variant="spark" size="sm">
               Get Quote
