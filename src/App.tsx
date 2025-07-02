@@ -7,6 +7,10 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CustomBusinessSigns from "./pages/services/CustomBusinessSigns";
 import AwardsRecognition from "./pages/services/AwardsRecognition";
+import GeneralLaserServices from "./pages/services/GeneralLaserServices";
+import CorporateServices from "./pages/services/CorporateServices";
+import PersonalizationGifts from "./pages/services/PersonalizationGifts";
+import HomeDecorLifestyle from "./pages/services/HomeDecorLifestyle";
 import MedicalEngraving from "./pages/industries/MedicalEngraving";
 import RestaurantEngraving from "./pages/industries/RestaurantEngraving";
 import ProfessionalOfficeSigns from "./pages/industries/ProfessionalOfficeSigns";
@@ -45,6 +49,10 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/services/custom-business-signs" element={<CustomBusinessSigns />} />
           <Route path="/services/awards-recognition" element={<AwardsRecognition />} />
+          <Route path="/services/general-laser-services" element={<GeneralLaserServices />} />
+          <Route path="/services/corporate-services" element={<CorporateServices />} />
+          <Route path="/services/personalization-gifts" element={<PersonalizationGifts />} />
+          <Route path="/services/home-decor-lifestyle" element={<HomeDecorLifestyle />} />
           <Route path="/industries/medical-engraving" element={<MedicalEngraving />} />
           <Route path="/industries/restaurant-engraving" element={<RestaurantEngraving />} />
           <Route path="/industries/professional-office-signs" element={<ProfessionalOfficeSigns />} />
