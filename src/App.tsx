@@ -11,6 +11,9 @@ import GeneralLaserServices from "./pages/services/GeneralLaserServices";
 import CorporateServices from "./pages/services/CorporateServices";
 import PersonalizationGifts from "./pages/services/PersonalizationGifts";
 import HomeDecorLifestyle from "./pages/services/HomeDecorLifestyle";
+import IndustrialManufacturing from "./pages/services/IndustrialManufacturing";
+import MedicalScientific from "./pages/services/MedicalScientific";
+import CreativeArtServices from "./pages/services/CreativeArtServices";
 import MedicalEngraving from "./pages/industries/MedicalEngraving";
 import RestaurantEngraving from "./pages/industries/RestaurantEngraving";
 import ProfessionalOfficeSigns from "./pages/industries/ProfessionalOfficeSigns";
@@ -53,6 +56,9 @@ const App = () => (
           <Route path="/services/corporate-services" element={<CorporateServices />} />
           <Route path="/services/personalization-gifts" element={<PersonalizationGifts />} />
           <Route path="/services/home-decor-lifestyle" element={<HomeDecorLifestyle />} />
+          <Route path="/services/industrial-manufacturing" element={<IndustrialManufacturing />} />
+          <Route path="/services/medical-scientific" element={<MedicalScientific />} />
+          <Route path="/services/creative-art-services" element={<CreativeArtServices />} />
           <Route path="/industries/medical-engraving" element={<MedicalEngraving />} />
           <Route path="/industries/restaurant-engraving" element={<RestaurantEngraving />} />
           <Route path="/industries/professional-office-signs" element={<ProfessionalOfficeSigns />} />
