@@ -7,15 +7,10 @@ import {
   Phone,
   Heart,
   Award,
-  Baby,
   GraduationCap,
   Building2,
-  Plane,
-  Church,
-  Cake,
   Gift,
-  PawPrint,
-  School,
+  Star,
   ChevronDown,
   ChevronRight
 } from "lucide-react";
@@ -44,18 +39,12 @@ const mainItems = [
 ];
 
 const eventItems = [
-  { title: "Weddings", url: "/events/weddings", icon: Heart },
-  { title: "Retirement Parties", url: "/events/retirement-parties", icon: Award },
-  { title: "Baby Showers & Gender Reveals", url: "/events/baby-showers", icon: Baby },
-  { title: "Anniversaries", url: "/events/anniversaries", icon: Heart },
-  { title: "Graduations", url: "/events/graduations", icon: GraduationCap },
+  { title: "Weddings & Anniversaries", url: "/events/anniversaries", icon: Heart },
   { title: "Corporate Events", url: "/events/corporate-events", icon: Building2 },
-  { title: "Trade Shows & Conferences", url: "/events/trade-shows", icon: Plane },
-  { title: "Religious Ceremonies", url: "/events/religious-ceremonies", icon: Church },
-  { title: "Quinceañeras & Sweet 16s", url: "/events/quinceañeras", icon: Cake },
-  { title: "Holiday Gifts & Decor", url: "/events/holiday-gifts", icon: Gift },
-  { title: "Pet Memorials & Celebrations", url: "/events/pet-memorials", icon: PawPrint },
-  { title: "School & Sports Events", url: "/events/school-sports", icon: School },
+  { title: "Graduations", url: "/events/graduations", icon: GraduationCap },
+  { title: "Holiday Events", url: "/events/holiday-events", icon: Calendar },
+  { title: "Special Celebrations", url: "/events/special-celebrations", icon: Gift },
+  { title: "Grand Openings", url: "/events/grand-openings", icon: Star },
 ];
 
 export function AppSidebar() {

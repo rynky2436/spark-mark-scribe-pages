@@ -26,6 +26,12 @@ import EventsOccasions from "./pages/EventsOccasions";
 import Weddings from "./pages/events/Weddings";
 import RetirementParties from "./pages/events/RetirementParties";
 import BabyShowers from "./pages/events/BabyShowers";
+import Anniversaries from "./pages/events/Anniversaries";
+import Graduations from "./pages/events/Graduations";
+import CorporateEvents from "./pages/events/CorporateEvents";
+import HolidayEvents from "./pages/events/HolidayEvents";
+import SpecialCelebrations from "./pages/events/SpecialCelebrations";
+import GrandOpenings from "./pages/events/GrandOpenings";
 
 const queryClient = new QueryClient();
 
@@ -58,6 +64,12 @@ const App = () => (
           <Route path="/events/weddings" element={<Weddings />} />
           <Route path="/events/retirement-parties" element={<RetirementParties />} />
           <Route path="/events/baby-showers" element={<BabyShowers />} />
+          <Route path="/events/anniversaries" element={<Anniversaries />} />
+          <Route path="/events/graduations" element={<Graduations />} />
+          <Route path="/events/corporate-events" element={<CorporateEvents />} />
+          <Route path="/events/holiday-events" element={<HolidayEvents />} />
+          <Route path="/events/special-celebrations" element={<SpecialCelebrations />} />
+          <Route path="/events/grand-openings" element={<GrandOpenings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
