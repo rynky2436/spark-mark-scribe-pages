@@ -23,6 +23,9 @@ import AreasWeServe from "./pages/AreasWeServe";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import EventsOccasions from "./pages/EventsOccasions";
+import Weddings from "./pages/events/Weddings";
+import RetirementParties from "./pages/events/RetirementParties";
+import BabyShowers from "./pages/events/BabyShowers";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +55,9 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/events-occasions" element={<EventsOccasions />} />
+          <Route path="/events/weddings" element={<Weddings />} />
+          <Route path="/events/retirement-parties" element={<RetirementParties />} />
+          <Route path="/events/baby-showers" element={<BabyShowers />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
