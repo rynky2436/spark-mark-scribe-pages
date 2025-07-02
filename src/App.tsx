@@ -14,6 +14,10 @@ import HomeDecorLifestyle from "./pages/services/HomeDecorLifestyle";
 import IndustrialManufacturing from "./pages/services/IndustrialManufacturing";
 import MedicalScientific from "./pages/services/MedicalScientific";
 import CreativeArtServices from "./pages/services/CreativeArtServices";
+import PrototypingFabrication from "./pages/services/PrototypingFabrication";
+import HobbySpecialtyProjects from "./pages/services/HobbySpecialtyProjects";
+import EducationAwards from "./pages/services/EducationAwards";
+import PackagingMerchandising from "./pages/services/PackagingMerchandising";
 import MedicalEngraving from "./pages/industries/MedicalEngraving";
 import RestaurantEngraving from "./pages/industries/RestaurantEngraving";
 import ProfessionalOfficeSigns from "./pages/industries/ProfessionalOfficeSigns";
@@ -59,6 +63,10 @@ const App = () => (
           <Route path="/services/industrial-manufacturing" element={<IndustrialManufacturing />} />
           <Route path="/services/medical-scientific" element={<MedicalScientific />} />
           <Route path="/services/creative-art-services" element={<CreativeArtServices />} />
+          <Route path="/services/prototyping-fabrication" element={<PrototypingFabrication />} />
+          <Route path="/services/hobby-specialty-projects" element={<HobbySpecialtyProjects />} />
+          <Route path="/services/education-awards" element={<EducationAwards />} />
+          <Route path="/services/packaging-merchandising" element={<PackagingMerchandising />} />
           <Route path="/industries/medical-engraving" element={<MedicalEngraving />} />
           <Route path="/industries/restaurant-engraving" element={<RestaurantEngraving />} />
           <Route path="/industries/professional-office-signs" element={<ProfessionalOfficeSigns />} />

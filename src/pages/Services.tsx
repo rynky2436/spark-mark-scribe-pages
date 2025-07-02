@@ -113,7 +113,7 @@ const Services = () => {
             <p className="text-lg text-muted-foreground mb-8">Professional solutions for specific industries and applications</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link to="/services/industrial-manufacturing">
               <Card className="group hover:shadow-spark transition-all duration-300 cursor-pointer">
                 <CardContent className="p-6 text-center">
@@ -137,6 +137,42 @@ const Services = () => {
                 <CardContent className="p-6 text-center">
                   <h4 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Creative & Art Services</h4>
                   <p className="text-muted-foreground text-sm">Custom stencils, puzzles, model making, mixed-media art</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/services/prototyping-fabrication">
+              <Card className="group hover:shadow-spark transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Prototyping & Fabrication</h4>
+                  <p className="text-muted-foreground text-sm">Architectural models, custom brackets, manufacturing fixtures</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/services/hobby-specialty-projects">
+              <Card className="group hover:shadow-spark transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Hobby & Specialty Projects</h4>
+                  <p className="text-muted-foreground text-sm">Cosplay props, RC parts, board games, knife scales</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/services/education-awards">
+              <Card className="group hover:shadow-spark transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Education & Awards</h4>
+                  <p className="text-muted-foreground text-sm">School medals, STEM kits, academic certificates</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/services/packaging-merchandising">
+              <Card className="group hover:shadow-spark transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Packaging & Merchandising</h4>
+                  <p className="text-muted-foreground text-sm">Custom product packaging, gift boxes, retail displays</p>
                 </CardContent>
               </Card>
             </Link>
