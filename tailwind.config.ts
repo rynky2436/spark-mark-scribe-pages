@@ -61,7 +61,35 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				spark: {
+					orange: 'hsl(var(--spark-orange))',
+					gold: 'hsl(var(--spark-gold))',
+					blue: 'hsl(var(--spark-blue))'
+				},
+				laser: {
+					blue: 'hsl(var(--laser-blue))'
+				},
+				metal: {
+					gray: 'hsl(var(--metal-gray))'
+				},
+				wood: {
+					brown: 'hsl(var(--wood-brown))'
 				}
+			},
+			backgroundImage: {
+				'gradient-spark': 'var(--gradient-spark)',
+				'gradient-laser': 'var(--gradient-laser)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'spark': 'var(--shadow-spark)',
+				'laser': 'var(--shadow-laser)',
+				'elegant': 'var(--shadow-elegant)'
+			},
+			transitionProperty: {
+				'spark': 'var(--transition-spark)',
+				'glow': 'var(--transition-glow)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
