@@ -11,7 +11,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/c25e1bad-92a2-4983-be7d-f4bd2cf71025.png" 
               alt="Sparks & Marks Laser Engraving" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
           
