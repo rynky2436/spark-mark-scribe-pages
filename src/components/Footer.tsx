@@ -16,12 +16,12 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-background/80 mb-4">
-              Professional laser engraving and cutting services on wood, metal, glass serving Maryland, Delaware, Virginia businesses.
+              Professional laser engraving and cutting services on wood, metal, glass serving Washington DC Metro Area, Maryland, Virginia, and Northern VA businesses.
             </p>
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-spark-orange" />
-                <span>(240) 324-7110</span>
+                <span>(202) 555-MARK</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-spark-orange" />
@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-spark-orange" />
-                <span>Hagerstown, Maryland</span>
+                <span>Washington DC Metro Area</span>
               </div>
             </div>
           </div>
@@ -61,12 +61,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Service Areas</h4>
             <ul className="space-y-2 text-sm text-background/80">
-              <li>Hagerstown, Maryland</li>
-              <li>Washington County MD</li>
+              <li>Washington DC Metro Area</li>
               <li>Maryland (MD) Statewide</li>
-              <li>Delaware (DE) Businesses</li>
-              <li>Virginia (VA) Companies</li>
-              <li>Tri-State Area</li>
+              <li>Northern Virginia (VA)</li>
+              <li>Washington DC Businesses</li>
+              <li>DMV Area Coverage</li>
+              <li>Tri-State Region</li>
             </ul>
           </div>
         </div>

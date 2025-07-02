@@ -9,10 +9,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Sparks & Marks Laser Engraving Hagerstown Maryland
+            Sparks & Marks Laser Engraving Washington DC Metro Area
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Located in Hagerstown, Maryland, we specialize in precision laser engraving and cutting services on wood, metal, glass, and all materials for businesses throughout Maryland, Delaware, and Virginia.
+            Located in the Washington DC Metro Area, we specialize in precision laser engraving and cutting services on wood, metal, glass, and all materials for businesses throughout Maryland, DC, Virginia, and Northern VA.
           </p>
         </div>
 
@@ -58,11 +58,11 @@ const Services = () => {
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Service Areas</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• Hagerstown, Maryland</li>
+                <li>• Washington DC Metro Area</li>
                 <li>• Maryland (MD) statewide</li>
-                <li>• Delaware (DE) businesses</li>
-                <li>• Virginia (VA) companies</li>
-                <li>• Washington County MD</li>
+                <li>• Northern Virginia (VA)</li>
+                <li>• Washington DC businesses</li>
+                <li>• DMV area coverage</li>
               </ul>
             </div>
 
@@ -87,7 +87,7 @@ const Services = () => {
               </div>
               <CardTitle>Custom Business Signs</CardTitle>
               <CardDescription>
-                Professional laser engraved signage on wood, metal, glass for MD businesses
+                Professional laser engraved signage on wood, metal, glass for DC Metro Area businesses
               </CardDescription>
             </CardHeader>
             <CardContent>

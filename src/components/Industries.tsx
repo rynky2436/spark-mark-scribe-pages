@@ -21,7 +21,7 @@ const Industries = () => {
     {
       icon: Heart,
       title: "Medical Device Engraving",
-      description: "Medical equipment laser engraving, compliance labels, hospital signage in MD, DE, VA",
+      description: "Medical equipment laser engraving, compliance labels, hospital signage in DC Metro Area, MD, VA",
       image: medicalImage,
       gradient: "bg-gradient-spark"
     },
@@ -35,7 +35,7 @@ const Industries = () => {
     {
       icon: Utensils,
       title: "Restaurant Laser Engraving",
-      description: "Menu boards, table numbers, promotional signage laser cut for Maryland restaurants",
+      description: "Menu boards, table numbers, promotional signage laser cut for DC Metro Area restaurants",
       image: restaurantImage,
       gradient: "bg-gradient-spark"
     },
@@ -48,7 +48,7 @@ const Industries = () => {
     {
       icon: Tractor,
       title: "Agriculture Equipment Tags",
-      description: "Farm equipment laser engraving, livestock tags, agricultural signage MD VA DE",
+      description: "Farm equipment laser engraving, livestock tags, agricultural signage DC Metro MD VA",
       gradient: "bg-gradient-spark"
     },
     {
@@ -60,19 +60,19 @@ const Industries = () => {
     {
       icon: Factory,
       title: "Industrial Laser Marking",
-      description: "Safety signs, equipment tags, compliance marking laser engraved in Maryland",
+      description: "Safety signs, equipment tags, compliance marking laser engraved in DC Metro Area",
       gradient: "bg-gradient-spark"
     },
     {
       icon: Laptop,
       title: "Technology Laser Engraving",
-      description: "Product labels, corporate awards, tech signage laser cut in Hagerstown MD",
+      description: "Product labels, corporate awards, tech signage laser cut in Washington DC Metro Area",
       gradient: "bg-gradient-laser"
     },
     {
       icon: Hotel,
       title: "Hospitality Custom Signs",
-      description: "Hotel room signs, guest amenities, promotional displays laser engraved MD DE VA",
+      description: "Hotel room signs, guest amenities, promotional displays laser engraved DC Metro MD VA",
       gradient: "bg-gradient-spark"
     }
   ];
@@ -85,7 +85,7 @@ const Industries = () => {
             Laser Engraving Services by Industry
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Sparks & Marks provides specialized laser engraving and cutting services on wood, metal, glass for businesses across all industries in Hagerstown MD and throughout the tri-state area.
+            Sparks & Marks provides specialized laser engraving and cutting services on wood, metal, glass for businesses across all industries in Washington DC Metro Area and throughout Maryland, Virginia, and Northern VA.
           </p>
         </div>
 

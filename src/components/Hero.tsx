@@ -25,11 +25,11 @@ const Hero = () => {
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Professional Laser Engraving
-            <span className="block text-spark-gold">Hagerstown MD</span>
+            <span className="block text-spark-gold">DC Metro Area</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-            Expert laser engraving and cutting on wood, metal, glass serving Maryland, Delaware, Virginia businesses with precision craftsmanship.
+            Expert laser engraving and cutting on wood, metal, glass serving Washington DC Metro Area, Maryland, Virginia, and Northern VA businesses with precision craftsmanship.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -49,7 +49,7 @@ const Hero = () => {
               </div>
               <div>
                 <p className="font-semibold">Local Expertise</p>
-                <p className="text-sm text-white/80">Hagerstown, MD based</p>
+                <p className="text-sm text-white/80">DC Metro Area based</p>
               </div>
             </div>
             <div className="flex items-center space-x-3 text-white">

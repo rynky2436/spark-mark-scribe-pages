@@ -19,7 +19,7 @@ const Contact = () => {
             Contact Sparks & Marks
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your laser engraving project? Get in touch with our Hagerstown team for a free consultation and quote.
+            Ready to start your laser engraving project? Get in touch with our Washington DC Metro Area team for a free consultation and quote.
           </p>
         </div>
 
@@ -57,7 +57,7 @@ const Contact = () => {
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Phone
                       </label>
-                      <Input type="tel" placeholder="(240) 324-7110" />
+                      <Input type="tel" placeholder="(202) 555-MARK" />
                     </div>
                   </div>
                   
@@ -96,7 +96,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-foreground">(240) 324-7110</p>
+                <p className="text-2xl font-bold text-foreground">(202) 555-MARK</p>
                 <p className="text-muted-foreground">Call for immediate assistance</p>
               </CardContent>
             </Card>
@@ -122,8 +122,8 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="font-medium text-foreground">Hagerstown, Maryland</p>
-                <p className="text-muted-foreground">Serving MD, DE, VA</p>
+                <p className="font-medium text-foreground">Washington DC Metro Area</p>
+                <p className="text-muted-foreground">Serving MD, DC, Northern VA</p>
               </CardContent>
             </Card>
 

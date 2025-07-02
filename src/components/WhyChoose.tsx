@@ -18,24 +18,24 @@ const WhyChoose = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Why Choose Sparks & Marks Laser Engraving in Hagerstown Maryland?
+            Why Choose Sparks & Marks Laser Engraving in Washington DC Metro Area?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From custom business signage to personalized gifts, we offer complete laser engraving and cutting services on wood, metal, glass, and all materials for Maryland, Delaware, and Virginia businesses.
+            From custom business signage to personalized gifts, we offer complete laser engraving and cutting services on wood, metal, glass, and all materials for Washington DC Metro Area, Maryland, Virginia, and Northern VA businesses.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
-            <h3 className="text-3xl font-bold text-foreground mb-8">Local Hagerstown MD Expertise</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-8">Local DC Metro Area Expertise</h3>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-gradient-spark rounded-lg flex-shrink-0">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Located in Hagerstown, Maryland serving the tri-state area</p>
-                  <p className="text-muted-foreground">Convenient location for Maryland, Delaware, and Virginia businesses</p>
+                  <p className="font-semibold text-foreground">Located in Washington DC Metro Area serving the region</p>
+                  <p className="text-muted-foreground">Convenient location for Maryland, DC, Virginia, and Northern VA businesses</p>
                 </div>
               </div>
               
@@ -44,8 +44,8 @@ const WhyChoose = () => {
                   <Clock className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Fast turnaround for Maryland, Delaware, Virginia businesses</p>
-                  <p className="text-muted-foreground">Quick delivery and efficient service for local clients</p>
+                  <p className="font-semibold text-foreground">Fast turnaround for DC Metro Area businesses</p>
+                  <p className="text-muted-foreground">Quick delivery and efficient service for local MD, DC, VA clients</p>
                 </div>
               </div>
               
@@ -120,11 +120,11 @@ const WhyChoose = () => {
         <div className="text-center mt-16">
           <Card className="max-w-2xl mx-auto">
             <CardHeader>
-              <CardTitle className="text-2xl">Ready for Professional Laser Engraving in Hagerstown MD?</CardTitle>
+              <CardTitle className="text-2xl">Ready for Professional Laser Engraving in DC Metro Area?</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-6">
-                Contact Sparks & Marks today for a free quote on laser engraving services for your Maryland, Delaware, or Virginia business. We handle bulk orders and custom projects with efficiency.
+                Contact Sparks & Marks today for a free quote on laser engraving services for your Washington DC Metro Area, Maryland, Virginia, or Northern VA business. We handle bulk orders and custom projects with efficiency.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="spark" size="lg">
