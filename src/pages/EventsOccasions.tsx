@@ -12,42 +12,48 @@ const EventsOccasions = () => {
       title: "Weddings & Anniversaries",
       description: "Custom wedding signs, table numbers, guest books, and anniversary gifts",
       items: ["Welcome signs", "Table numbers", "Guest book alternatives", "Anniversary plaques", "Wedding favors"],
-      gradient: "bg-gradient-spark"
+      gradient: "bg-gradient-spark",
+      link: "/events/anniversaries"
     },
     {
       icon: Briefcase,
       title: "Corporate Events",
       description: "Professional signage and awards for business events and conferences",
       items: ["Conference signage", "Award presentations", "Corporate gifts", "Name badges", "Directional signs"],
-      gradient: "bg-gradient-laser"
+      gradient: "bg-gradient-laser",
+      link: "/events/corporate-events"
     },
     {
       icon: GraduationCap,
       title: "Graduations",
       description: "Commemorate academic achievements with custom engraved items",
       items: ["Graduation plaques", "Achievement awards", "Photo frames", "Class year items", "School memorabilia"],
-      gradient: "bg-gradient-spark"
+      gradient: "bg-gradient-spark",
+      link: "/events/graduations"
     },
     {
       icon: Calendar,
       title: "Holiday Events",
       description: "Seasonal decorations and gift items for all holidays",
       items: ["Christmas ornaments", "Holiday signs", "Seasonal decorations", "Gift tags", "Memorial items"],
-      gradient: "bg-gradient-laser"
+      gradient: "bg-gradient-laser",
+      link: "/events/holiday-events"
     },
     {
       icon: Gift,
       title: "Special Celebrations",
       description: "Birthdays, retirements, and milestone celebrations",
       items: ["Birthday signs", "Retirement gifts", "Milestone markers", "Party decorations", "Memory books"],
-      gradient: "bg-gradient-spark"
+      gradient: "bg-gradient-spark",
+      link: "/events/special-celebrations"
     },
     {
       icon: Star,
       title: "Grand Openings",
       description: "Make your business launch memorable with custom signage",
       items: ["Opening ceremony signs", "Ribbon cutting plaques", "Promotional displays", "Business cards holders", "Welcome banners"],
-      gradient: "bg-gradient-laser"
+      gradient: "bg-gradient-laser",
+      link: "/events/grand-openings"
     }
   ];
 
@@ -96,25 +102,30 @@ const EventsOccasions = () => {
               const IconComponent = occasion.icon;
               
               return (
-                <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
-                  <CardHeader>
-                    <div className={`p-3 ${occasion.gradient} rounded-lg w-fit mb-3`}>
-                      <IconComponent className="h-8 w-8 text-white" />
-                    </div>
-                    <CardTitle className="text-xl">{occasion.title}</CardTitle>
-                    <p className="text-muted-foreground">{occasion.description}</p>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
-                      {occasion.items.map((item, idx) => (
-                        <li key={idx} className="flex items-center space-x-2">
-                          <div className="h-2 w-2 bg-primary rounded-full"></div>
-                          <span className="text-foreground text-sm">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
+                <Link key={index} to={occasion.link}>
+                  <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                    <CardHeader>
+                      <div className={`p-3 ${occasion.gradient} rounded-lg w-fit mb-3`}>
+                        <IconComponent className="h-8 w-8 text-white" />
+                      </div>
+                      <CardTitle className="text-xl flex items-center justify-between">
+                        {occasion.title}
+                        <ArrowRight className="h-5 w-5 text-primary group-hover:translate-x-1 transition-transform" />
+                      </CardTitle>
+                      <p className="text-muted-foreground">{occasion.description}</p>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2">
+                        {occasion.items.map((item, idx) => (
+                          <li key={idx} className="flex items-center space-x-2">
+                            <div className="h-2 w-2 bg-primary rounded-full"></div>
+                            <span className="text-foreground text-sm">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </Link>
               );
             })}
           </div>
