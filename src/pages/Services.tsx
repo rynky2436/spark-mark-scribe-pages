@@ -9,31 +9,31 @@ const Services = () => {
   const services = [
     {
       icon: Zap,
-      title: "Laser Engraving",
-      description: "Precision laser engraving on wood, metal, glass, and acrylic materials",
-      features: ["Medical device marking", "Industrial equipment tags", "Custom nameplates", "Corporate branding"],
-      link: "/services/laser-engraving"
-    },
-    {
-      icon: Scissors,
-      title: "Laser Cutting",
-      description: "Precise laser cutting services for detailed shapes and designs",
-      features: ["Intricate patterns", "Custom shapes", "Prototype development", "Production runs"],
-      link: "/services/laser-cutting"
+      title: "General Laser Services",
+      description: "Custom laser engraving, cutting, etching, and marking on all materials",
+      features: ["Custom laser engraving", "Precision laser cutting", "Serial numbers & barcodes", "Photo engraving"],
+      link: "/services/general-laser-services"
     },
     {
       icon: Award,
-      title: "Awards & Recognition",
-      description: "Custom awards, plaques, and recognition items",
-      features: ["Employee recognition", "Achievement awards", "Memorial plaques", "Corporate gifts"],
-      link: "/services/awards-recognition"
+      title: "Corporate & Business Services", 
+      description: "Professional signage, awards, and branded promotional items",
+      features: ["Business signage", "Corporate awards", "Promotional items", "Custom business cards"],
+      link: "/services/corporate-services"
     },
     {
       icon: Gift,
-      title: "Custom Gifts",
-      description: "Personalized gifts and promotional items",
-      features: ["Wedding favors", "Corporate gifts", "Promotional products", "Holiday items"],
-      link: "/services/custom-gifts"
+      title: "Personalization & Gifts",
+      description: "Custom personalized items for special occasions and gifts",
+      features: ["Wedding favors", "Custom nameplates", "Drinkware engraving", "Pet ID tags"],
+      link: "/services/personalization-gifts"
+    },
+    {
+      icon: Scissors,
+      title: "Home Decor & Lifestyle",
+      description: "Custom wall art, family signs, and decorative home items", 
+      features: ["Wall art", "Family name signs", "LED acrylic signs", "Home organizers"],
+      link: "/services/home-decor-lifestyle"
     }
   ];
 
@@ -74,38 +74,72 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {services.map((service, index) => {
               const IconComponent = service.icon;
               
               return (
-                <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
-                  <CardHeader>
-                    <div className="p-3 bg-gradient-spark rounded-lg w-fit mb-3">
-                      <IconComponent className="h-8 w-8 text-white" />
-                    </div>
-                    <CardTitle className="text-2xl">{service.title}</CardTitle>
-                    <p className="text-muted-foreground text-lg">{service.description}</p>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2 mb-6">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center space-x-2">
-                          <div className="h-2 w-2 bg-primary rounded-full"></div>
-                          <span className="text-foreground">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button variant="outline" className="group-hover:border-primary" asChild>
-                      <Link to={service.link}>
-                        Learn More
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
+                <Link key={index} to={service.link}>
+                  <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
+                    <CardHeader>
+                      <div className="p-3 bg-gradient-spark rounded-lg w-fit mb-3">
+                        <IconComponent className="h-8 w-8 text-white" />
+                      </div>
+                      <CardTitle className="text-2xl flex items-center justify-between">
+                        {service.title}
+                        <ArrowRight className="h-6 w-6 text-primary group-hover:translate-x-1 transition-transform" />
+                      </CardTitle>
+                      <p className="text-muted-foreground text-lg">{service.description}</p>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2">
+                        {service.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-center space-x-2">
+                            <div className="h-2 w-2 bg-primary rounded-full"></div>
+                            <span className="text-foreground">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </Link>
               );
             })}
+          </div>
+
+          {/* Additional Service Categories */}
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-foreground mb-4">Specialized Services</h3>
+            <p className="text-lg text-muted-foreground mb-8">Professional solutions for specific industries and applications</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link to="/services/industrial-manufacturing">
+              <Card className="group hover:shadow-spark transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Industrial & Manufacturing</h4>
+                  <p className="text-muted-foreground text-sm">Metal part marking, cable tags, tool identification</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/services/medical-scientific">
+              <Card className="group hover:shadow-spark transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Medical & Scientific</h4>
+                  <p className="text-muted-foreground text-sm">FDA-compliant medical device marking, lab equipment</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/services/creative-art-services">
+              <Card className="group hover:shadow-spark transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Creative & Art Services</h4>
+                  <p className="text-muted-foreground text-sm">Custom stencils, puzzles, model making, mixed-media art</p>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
