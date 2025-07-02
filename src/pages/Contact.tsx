@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { sanitizeUserInput, validateEmail, validatePhoneNumber, formRateLimit, processFormData } from "@/lib/security";
 import { useToast } from "@/hooks/use-toast";
 import {
   Form,
@@ -25,30 +24,17 @@ import {
   Send 
 } from "lucide-react";
 
-// Enhanced form validation schema with security checks
+// Form validation schema
 const contactFormSchema = z.object({
-  firstName: z.string()
-    .min(1, "First name is required")
-    .max(50, "First name must be less than 50 characters")
-    .refine((val) => !/<script|javascript:|data:/i.test(val), "Invalid characters detected"),
-  lastName: z.string()
-    .min(1, "Last name is required")
-    .max(50, "Last name must be less than 50 characters")
-    .refine((val) => !/<script|javascript:|data:/i.test(val), "Invalid characters detected"),
-  email: z.string()
-    .min(1, "Email is required")
-    .refine(validateEmail, "Please enter a valid email address"),
-  phone: z.string()
-    .min(1, "Phone number is required")
-    .refine(validatePhoneNumber, "Please enter a valid phone number"),
-  companyName: z.string()
-    .max(100, "Company name must be less than 100 characters")
-    .refine((val) => !val || !/<script|javascript:|data:/i.test(val), "Invalid characters detected")
-    .optional(),
-  projectDetails: z.string()
-    .min(10, "Please provide at least 10 characters describing your project")
-    .max(1000, "Project description must be less than 1000 characters")
-    .refine((val) => !/<script|javascript:|data:/i.test(val), "Invalid characters detected"),
+  firstName: z.string().min(1, "First name is required").max(50),
+  lastName: z.string().min(1, "Last name is required").max(50),
+  email: z.string().email("Please enter a valid email address"),
+  phone: z.string().min(1, "Phone number is required").regex(
+    /^[\+]?[1-9][\d]{0,15}$/,
+    "Please enter a valid phone number"
+  ),
+  companyName: z.string().max(100).optional(),
+  projectDetails: z.string().min(10, "Please provide at least 10 characters describing your project").max(1000),
 });
 
 type ContactFormData = z.infer<typeof contactFormSchema>;
@@ -69,54 +55,19 @@ const Contact = () => {
 
   const onSubmit = async (data: ContactFormData) => {
     try {
-      // Check rate limiting
-      const userKey = `contact_${data.email}`;
-      if (!formRateLimit.isAllowed(userKey, 3, 300000)) { // 3 attempts per 5 minutes
-        toast({
-          title: "Too Many Requests",
-          description: "Please wait a few minutes before submitting another request.",
-          variant: "destructive",
-        });
-        return;
-      }
-
-      // Sanitize all input data
-      const sanitizedData = processFormData(data);
+      // Simulate form submission
+      console.log("Form submission:", data);
       
-      // Additional validation
-      if (!validateEmail(sanitizedData.email)) {
-        toast({
-          title: "Invalid Email",
-          description: "Please enter a valid email address.",
-          variant: "destructive",
-        });
-        return;
-      }
-
-      if (!validatePhoneNumber(sanitizedData.phone)) {
-        toast({
-          title: "Invalid Phone",
-          description: "Please enter a valid phone number.",
-          variant: "destructive",
-        });
-        return;
-      }
-
-      // Simulate form submission with sanitized data
-      console.log("Secure form submission:", sanitizedData);
-      
-      // Here you would typically send the sanitized data to your backend
+      // Here you would typically send the data to your backend
       // For now, we'll just show a success message
       toast({
         title: "Quote Request Sent!",
         description: "We'll get back to you within 24 hours with your custom quote.",
       });
       
-      // Reset form and rate limit after successful submission
+      // Reset form after successful submission
       form.reset();
-      formRateLimit.reset(userKey);
     } catch (error) {
-      console.error("Form submission error:", error);
       toast({
         title: "Error",
         description: "Failed to send your request. Please try again or call us directly.",
