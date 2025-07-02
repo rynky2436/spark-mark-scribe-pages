@@ -132,9 +132,11 @@ const Services = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button variant="outline" size="sm" className="group-hover:border-primary">
-                Learn More
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button variant="outline" size="sm" className="group-hover:border-primary" asChild>
+                <Link to="/services/packaging-merchandising">
+                  Learn More
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </CardContent>
           </Card>
@@ -150,9 +152,11 @@ const Services = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button variant="outline" size="sm" className="group-hover:border-primary">
-                Learn More
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button variant="outline" size="sm" className="group-hover:border-primary" asChild>
+                <Link to="/services/personalization-gifts">
+                  Learn More
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </CardContent>
           </Card>

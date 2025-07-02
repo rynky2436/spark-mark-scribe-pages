@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-laser-workshop.jpg";
 import { ArrowRight, Zap, Shield, Award } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -33,12 +34,16 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button variant="spark" size="lg" className="group">
-              Get Free Quote
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Button variant="spark" size="lg" className="group" asChild>
+              <Link to="/contact">
+                Get Free Quote
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
-            <Button variant="hero" size="lg">
-              View Our Work
+            <Button variant="hero" size="lg" asChild>
+              <Link to="/portfolio">
+                View Our Work
+              </Link>
             </Button>
           </div>
           
