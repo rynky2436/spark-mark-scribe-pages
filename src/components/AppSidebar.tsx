@@ -12,7 +12,9 @@ import {
   Gift,
   Star,
   ChevronDown,
-  ChevronRight
+  ChevronRight,
+  Baby,
+  PartyPopper
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -39,7 +41,10 @@ const mainItems = [
 ];
 
 const eventItems = [
-  { title: "Weddings & Anniversaries", url: "/events/anniversaries", icon: Heart },
+  { title: "Weddings", url: "/events/weddings", icon: Heart },
+  { title: "Anniversaries", url: "/events/anniversaries", icon: Heart },
+  { title: "Baby Showers", url: "/events/baby-showers", icon: Baby },
+  { title: "Retirement Parties", url: "/events/retirement-parties", icon: PartyPopper },
   { title: "Corporate Events", url: "/events/corporate-events", icon: Building2 },
   { title: "Graduations", url: "/events/graduations", icon: GraduationCap },
   { title: "Holiday Events", url: "/events/holiday-events", icon: Calendar },
