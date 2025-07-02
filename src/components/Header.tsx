@@ -7,15 +7,13 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="p-2 bg-gradient-spark rounded-lg">
-              <Zap className="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-foreground">Sparks & Marks</h1>
-              <p className="text-xs text-muted-foreground">Laser Engraving</p>
-            </div>
-          </div>
+          <Link to="/" className="flex items-center space-x-2">
+            <img 
+              src="/lovable-uploads/c25e1bad-92a2-4983-be7d-f4bd2cf71025.png" 
+              alt="Sparks & Marks Laser Engraving" 
+              className="h-12 w-auto"
+            />
+          </Link>
           
           <nav className="hidden md:flex items-center space-x-6">
             <Link to="/" className="text-foreground hover:text-primary transition-colors">Home</Link>
