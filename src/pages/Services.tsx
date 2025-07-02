@@ -185,44 +185,82 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Materials We Work With
+              Materials We Engrave by Laser Type
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our advanced laser equipment handles a wide variety of materials with precision and consistency.
+              Our advanced laser systems handle a comprehensive range of materials with precision.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-gradient-spark p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-2xl">W</span>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="p-6">
+              <div className="text-center mb-4">
+                <div className="bg-red-500 p-3 rounded-full w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">CO₂</span>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">CO₂ Laser</h3>
+                <p className="text-muted-foreground text-sm">Best for Organics & Plastics</p>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Wood</h3>
-              <p className="text-muted-foreground">Cherry, Oak, Maple, Bamboo, MDF, Plywood</p>
-            </div>
+              <ul className="space-y-1 text-sm text-muted-foreground">
+                <li>• Wood (Cherry, Oak, Maple, Bamboo, MDF)</li>
+                <li>• Acrylic (Clear, Colored, Frosted)</li>
+                <li>• Leather (Natural or synthetic)</li>
+                <li>• Paper & Cardboard</li>
+                <li>• Cork & Rubber</li>
+                <li>• Delrin (Acetal) - mechanical parts</li>
+                <li>• Fabric/Textiles - cotton, felt, denim</li>
+                <li>• Stone & Marble - photo engraving</li>
+                <li>• Tile & Ceramics</li>
+                <li>• Food items - fruit, chocolate</li>
+              </ul>
+            </Card>
             
-            <div className="text-center">
-              <div className="bg-gradient-laser p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-2xl">M</span>
+            <Card className="p-6">
+              <div className="text-center mb-4">
+                <div className="bg-blue-500 p-3 rounded-full w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">⚡</span>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">Fiber Laser</h3>
+                <p className="text-muted-foreground text-sm">Best for Metals & Some Plastics</p>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Metal</h3>
-              <p className="text-muted-foreground">Aluminum, Stainless Steel, Brass, Copper, Titanium</p>
-            </div>
+              <ul className="space-y-1 text-sm text-muted-foreground">
+                <li>• Stainless Steel, Aluminum, Brass</li>
+                <li>• Tungsten & Nickel</li>
+                <li>• Tool Steel / Carbon Steel</li>
+                <li>• Titanium & Copper</li>
+                <li>• Anodized Aluminum - color contrast</li>
+                <li>• Painted/Coated Metals</li>
+                <li>• PCB Boards - marking/cutting</li>
+                <li>• Plastics with additives (ABS, PE, PBT)</li>
+              </ul>
+            </Card>
             
-            <div className="text-center">
-              <div className="bg-gradient-spark p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-2xl">G</span>
+            <Card className="p-6">
+              <div className="text-center mb-4">
+                <div className="bg-purple-500 p-3 rounded-full w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">UV</span>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">UV Laser</h3>
+                <p className="text-muted-foreground text-sm">Delicate & Heat-Sensitive</p>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Glass</h3>
-              <p className="text-muted-foreground">Tempered, Annealed, Mirrors, Drinkware, Awards</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-gradient-laser p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-2xl">A</span>
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Acrylic</h3>
-              <p className="text-muted-foreground">Clear, Colored, Frosted, Cast, Extruded, LED-Compatible</p>
+              <ul className="space-y-1 text-sm text-muted-foreground">
+                <li>• Glass (without cracking)</li>
+                <li>• Transparent plastics (PET, PC, PMMA)</li>
+                <li>• Silicon Wafers / Semiconductors</li>
+                <li>• Medical polymer devices</li>
+                <li>• ID Cards / Smart Cards</li>
+                <li>• Thin Films / Coated Surfaces</li>
+              </ul>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <h3 className="text-xl font-semibold text-foreground mb-4">Specialty & Niche Materials</h3>
+            <div className="grid md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              <div className="text-muted-foreground text-sm">Mother of Pearl / Shell</div>
+              <div className="text-muted-foreground text-sm">Slate & Brick</div>
+              <div className="text-muted-foreground text-sm">Carbon Fiber (coated)</div>
+              <div className="text-muted-foreground text-sm">EVA & Craft Foam</div>
             </div>
           </div>
         </div>
