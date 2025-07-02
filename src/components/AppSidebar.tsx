@@ -38,6 +38,8 @@ const mainItems = [
   { title: "Services", url: "/services", icon: Briefcase },
   { title: "About", url: "/about", icon: Users },
   { title: "Portfolio", url: "/portfolio", icon: Award },
+  { title: "Blog", url: "/blog", icon: GraduationCap },
+  { title: "Areas We Serve", url: "/areas-we-serve", icon: Building2 },
   { title: "Contact", url: "/contact", icon: Phone },
 ];
 

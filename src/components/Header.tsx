@@ -23,6 +23,8 @@ const Header = () => {
             <Link to="/about" className="text-foreground hover:text-primary transition-colors">About</Link>
             <Link to="/portfolio" className="text-foreground hover:text-primary transition-colors">Portfolio</Link>
             <Link to="/blog" className="text-foreground hover:text-primary transition-colors">Blog</Link>
+            <Link to="/events-occasions" className="text-foreground hover:text-primary transition-colors">Events</Link>
+            <Link to="/areas-we-serve" className="text-foreground hover:text-primary transition-colors">Areas</Link>
             <Link to="/contact" className="text-foreground hover:text-primary transition-colors">Contact</Link>
           </nav>
 
