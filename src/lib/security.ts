@@ -1,6 +1,7 @@
 /**
  * Security utilities for input sanitization and validation
  */
+import { securityMonitor } from './security-monitor';
 
 // Basic HTML sanitization - removes potentially dangerous characters
 export const sanitizeHtml = (input: string): string => {
@@ -14,6 +15,15 @@ export const sanitizeHtml = (input: string): string => {
 
 // Sanitize user input for safe storage and display
 export const sanitizeUserInput = (input: string): string => {
+  // Check for potential XSS attempts and log them
+  const hasScripts = /<script|javascript:|data:text\/html/i.test(input);
+  if (hasScripts) {
+    securityMonitor.logEvent({
+      type: 'xss_attempt',
+      details: { input: input.substring(0, 100), detected: 'script_injection' },
+    });
+  }
+
   // Remove any potential script tags or dangerous content
   return input
     .trim()
@@ -52,6 +62,11 @@ class SimpleRateLimit {
     const validAttempts = attempts.filter(time => now - time < windowMs);
     
     if (validAttempts.length >= maxAttempts) {
+      // Log rate limit exceeded
+      securityMonitor.logEvent({
+        type: 'rate_limit_exceeded',
+        details: { key, attempts: validAttempts.length, maxAttempts, windowMs },
+      });
       return false;
     }
     

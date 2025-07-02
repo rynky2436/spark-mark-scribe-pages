@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { sanitizeUserInput, validateEmail, validatePhoneNumber, formRateLimit, processFormData } from "@/lib/security";
+import { securityMonitor } from "@/lib/security-monitor";
 import { useToast } from "@/hooks/use-toast";
 import {
   Form,
@@ -69,6 +70,16 @@ const Contact = () => {
 
   const onSubmit = async (data: ContactFormData) => {
     try {
+      // Log form submission attempt for monitoring
+      securityMonitor.logEvent({
+        type: 'form_submission',
+        details: { 
+          formType: 'contact_page',
+          email: data.email.substring(0, 5) + '***', // Partial email for privacy
+          hasCompany: !!data.companyName
+        },
+      });
+
       // Check rate limiting
       const userKey = `contact_${data.email}`;
       if (!formRateLimit.isAllowed(userKey, 3, 300000)) { // 3 attempts per 5 minutes
