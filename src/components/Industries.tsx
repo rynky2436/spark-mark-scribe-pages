@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import medicalImage from "@/assets/medical-engraving.jpg";
 import professionalImage from "@/assets/professional-signs.jpg";
 import restaurantImage from "@/assets/restaurant-engraving.jpg";
+import { Link } from "react-router-dom";
 import { 
   Heart, 
   Building2, 
@@ -23,57 +24,66 @@ const Industries = () => {
       title: "Medical Device Engraving",
       description: "Medical equipment laser engraving, compliance labels, hospital signage in DC Metro Area, MD, VA",
       image: medicalImage,
-      gradient: "bg-gradient-spark"
+      gradient: "bg-gradient-spark",
+      link: "/industries/medical-engraving"
     },
     {
       icon: Building2,
       title: "Professional Office Signs",
       description: "Custom office signs, nameplates, awards laser engraved on wood, metal, glass",
       image: professionalImage,
-      gradient: "bg-gradient-laser"
+      gradient: "bg-gradient-laser",
+      link: "/industries/professional-office-signs"
     },
     {
       icon: Utensils,
       title: "Restaurant Laser Engraving",
       description: "Menu boards, table numbers, promotional signage laser cut for DC Metro Area restaurants",
       image: restaurantImage,
-      gradient: "bg-gradient-spark"
+      gradient: "bg-gradient-spark",
+      link: "/industries/restaurant-engraving"
     },
     {
       icon: Home,
       title: "Real Estate",
       description: "Property signs, office displays, and marketing materials",
-      gradient: "bg-gradient-laser"
+      gradient: "bg-gradient-laser",
+      link: "/industries/real-estate"
     },
     {
       icon: Tractor,
       title: "Agriculture Equipment Tags",
       description: "Farm equipment laser engraving, livestock tags, agricultural signage DC Metro MD VA",
-      gradient: "bg-gradient-spark"
+      gradient: "bg-gradient-spark",
+      link: "/industries/agriculture"
     },
     {
       icon: ShoppingBag,
       title: "Retail Store Displays",
       description: "Store displays, product labels, promotional items laser cut on wood metal glass",
-      gradient: "bg-gradient-laser"
+      gradient: "bg-gradient-laser",
+      link: "/industries/retail"
     },
     {
       icon: Factory,
       title: "Industrial Laser Marking",
       description: "Safety signs, equipment tags, compliance marking laser engraved in DC Metro Area",
-      gradient: "bg-gradient-spark"
+      gradient: "bg-gradient-spark",
+      link: "/industries/industrial"
     },
     {
       icon: Laptop,
       title: "Technology Laser Engraving",
       description: "Product labels, corporate awards, tech signage laser cut in Washington DC Metro Area",
-      gradient: "bg-gradient-laser"
+      gradient: "bg-gradient-laser",
+      link: "/industries/technology"
     },
     {
       icon: Hotel,
       title: "Hospitality Custom Signs",
       description: "Hotel room signs, guest amenities, promotional displays laser engraved DC Metro MD VA",
-      gradient: "bg-gradient-spark"
+      gradient: "bg-gradient-spark",
+      link: "/industries/hospitality"
     }
   ];
 
@@ -114,9 +124,11 @@ const Industries = () => {
                   <p className="text-muted-foreground mb-4">
                     {industry.description}
                   </p>
-                  <Button variant="outline" size="sm" className="group-hover:border-primary">
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                  <Button variant="outline" size="sm" className="group-hover:border-primary" asChild>
+                    <Link to={industry.link}>
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>

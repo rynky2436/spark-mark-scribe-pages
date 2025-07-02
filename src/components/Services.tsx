@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import productsImage from "@/assets/laser-products.jpg";
 import { Layers, Scissors, Sparkles, Package, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -91,9 +92,11 @@ const Services = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button variant="outline" size="sm" className="group-hover:border-primary">
-                Learn More
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button variant="outline" size="sm" className="group-hover:border-primary" asChild>
+                <Link to="/services/custom-business-signs">
+                  Learn More
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </CardContent>
           </Card>
@@ -109,9 +112,11 @@ const Services = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button variant="outline" size="sm" className="group-hover:border-primary">
-                Learn More
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button variant="outline" size="sm" className="group-hover:border-primary" asChild>
+                <Link to="/services/awards-recognition">
+                  Learn More
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </CardContent>
           </Card>
