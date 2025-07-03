@@ -36,7 +36,10 @@ const Header = () => {
               <span className="text-foreground font-medium">Call Now: (240) 324-7110</span>
             </div>
             
-            <div className="hidden md:block">
+            <div className="hidden md:flex items-center space-x-2">
+              <Button variant="outline" size="sm" asChild>
+                <a href="https://portal.sparksandmarks.com" target="_blank" rel="noopener noreferrer">Portal</a>
+              </Button>
               <Button variant="spark" size="sm" asChild>
                 <Link to="/contact">Get Quote</Link>
               </Button>
@@ -113,9 +116,14 @@ const Header = () => {
                       <Phone className="h-4 w-4 text-primary" />
                       <span className="text-foreground font-medium">Call Now: (240) 324-7110</span>
                     </div>
-                    <Button variant="spark" size="sm" className="w-full" asChild>
-                      <Link to="/contact" onClick={() => setIsOpen(false)}>Get Quote</Link>
-                    </Button>
+                    <div className="flex flex-col space-y-2">
+                      <Button variant="outline" size="sm" className="w-full" asChild>
+                        <a href="https://portal.sparksandmarks.com" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Portal</a>
+                      </Button>
+                      <Button variant="spark" size="sm" className="w-full" asChild>
+                        <Link to="/contact" onClick={() => setIsOpen(false)}>Get Quote</Link>
+                      </Button>
+                    </div>
                   </div>
                 </nav>
               </SheetContent>
